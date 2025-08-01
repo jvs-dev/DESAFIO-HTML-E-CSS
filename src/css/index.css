@@ -1,5 +1,9 @@
 body {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main {
@@ -7,15 +11,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: calc(100% - 95px);
+  min-height: none;
+  max-height: none;
+  position: relative;
+  padding: 20px 30px;
+  width: 100%;
 }
 
 .main__img {
   height: auto;
-  max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .main__p {
   width: 100%;
   text-align: center;
+  margin: 20px 0px;
 }

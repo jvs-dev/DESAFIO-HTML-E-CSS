@@ -1,8 +1,16 @@
 .header {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 30px;
+  padding: 20px 30px;
+  width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  border: solid 2px #eee;
+  box-shadow: 0px 0px 2px #eee;
 }
 
 .header__logo img {
@@ -42,7 +50,7 @@
   height: 2px;
   bottom: -8px;
   left: 0;
-  background: #551a8b;
+  background: #0000EE;
   transition: 0.2s;
 }
 
