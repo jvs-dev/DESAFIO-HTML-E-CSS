@@ -1,0 +1,19 @@
+:root {
+   --white: #fff;
+   --black: #1e1e1e;
+   --blue: #1A347D;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   max-width: 100%;
+}
+
+body {
+  margin: 0px;  
+  position: relative;
+}
+

@@ -1,0 +1,21 @@
+body {
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__img {
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.main__p {
+  width: 100%;
+  text-align: center;
+}
