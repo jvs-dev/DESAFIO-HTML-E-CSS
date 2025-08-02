@@ -1,19 +1,23 @@
 :root {
-   --white: #fff;
-   --black: #1e1e1e;
-   --blue: #1A347D;
+  --white: #fff;
+  --black: #000;
+  --blue: #1a347d;
 }
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-   max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-  margin: 0px;  
+  margin: 0px;
   position: relative;
 }
 
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}

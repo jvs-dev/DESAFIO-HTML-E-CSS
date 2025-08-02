@@ -5,6 +5,7 @@
   width: 100%;
   padding: 20px 30px;
   background: var(--blue);
+  order: 100;
 }
 
 .footer__socialsDiv {
