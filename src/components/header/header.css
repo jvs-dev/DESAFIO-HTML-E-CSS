@@ -50,7 +50,7 @@
   height: 2px;
   bottom: -8px;
   left: 0;
-  background: #0000EE;
+  background: var(--blue);
   transition: 0.2s;
 }
 
