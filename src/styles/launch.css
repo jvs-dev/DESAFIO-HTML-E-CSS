@@ -30,6 +30,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
+  padding: 0px 30px;
+  font-weight: 600;
 }
 
 .main__carsCardDiv {

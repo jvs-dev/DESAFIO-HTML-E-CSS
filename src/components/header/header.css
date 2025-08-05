@@ -61,3 +61,11 @@
   text-align: center;
   text-decoration: none;
 }
+
+@media screen and (width <=700px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

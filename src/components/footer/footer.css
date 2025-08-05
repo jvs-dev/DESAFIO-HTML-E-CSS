@@ -47,6 +47,12 @@
 
 .footer__logo {
   justify-self: end;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer__logo:hover {
+  transform: scale(1.1);
 }
 
 .footer__div {
@@ -59,5 +65,21 @@
 @media screen and (width <= 950px) {
   .footer__socialsDiv {
     flex-direction: column;
+  }
+}
+
+@media screen and (width <= 612px) {
+  .footer {
+    display: flex;
+  }
+  .footer__socialsDiv {
+    display: none;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__copy {
+    text-align: center;
+    width: 100%;
   }
 }
