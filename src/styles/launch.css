@@ -6,7 +6,7 @@
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  padding: 20px 30px;
+  padding: 20px 0px;
 }
 
 .main__videoWrapper {
@@ -20,7 +20,16 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  max-width: 960px; /* opcional: limita o tamanho em telas grandes */
+  max-width: 960px;
+}
+
+.main__text--1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 12px 0px 0px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
 }
 
 .main__carsCardDiv {
@@ -28,7 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px 30px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
 }
 
 .main__carsCard {
@@ -38,6 +48,8 @@
   justify-content: center;
   padding: 4px;
   width: 22vw;
+  min-width: 270px;
+  margin: 0px 10px;
 }
 
 .carsCard__img {
@@ -52,6 +64,30 @@
   justify-content: center;
   width: 100%;
   gap: 12px;
+}
+
+.carsCard__div--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.carsCard__link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.carsCard__link:hover {
+  text-decoration: underline;
+}
+
+.carsCard__text {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .carsCard__info {
@@ -91,7 +127,7 @@
   text-align: center;
   padding: 12px 38px;
   border-radius: 10px;
-  background: #1650da;
+  background: var(--blue-2);
   border: solid 3px transparent;
   outline-width: 0px;
   margin: 20px 0px;
@@ -100,7 +136,15 @@
 
 .main__button.button--compare:hover {
   background: transparent;
-  border: solid 3px #1650da;
-  color: #1650da;
+  border: solid 3px var(--blue-2);
+  color: var(--blue-2);
   transform: scale(1.02);
+}
+
+@media screen and (max-width: 720px) {
+  .main__carsCardDiv {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
 }

@@ -14,13 +14,18 @@
 }
 
 .main__form__input,
-.main__form__select {
+.main__form__select,
+.main__form__textarea {
     width: 100%;
     padding: 12px 9px;
     border-radius: 12px;
-    border: solid 2px #b1b1b1;
+    border: solid 2px var(--gray);
     font-size: 16px;
     font-weight: 600;
+}
+
+.main__form__select {
+    color: var(--gray);
 }
 
 .main__form__title {
@@ -33,7 +38,7 @@
 }
 
 .main__form__button {
-    background: #1351DA;
+    background: var(--blue-2);
     color: #fff;
     padding: 14px 86px;
     font-size: 16px;
@@ -42,4 +47,27 @@
     outline-width: 0px;
     border-radius: 12px;
     width: min-content;
+}
+
+.main__div--1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main__carImage {
+    margin: 20px 0px 0px 0px;
+}
+
+.main__form__textarea {
+    padding: 6px 9px;
+}
+
+@media screen and (max-width: 768px) {
+    .main__div--1 {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
 }
