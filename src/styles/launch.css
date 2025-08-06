@@ -1,4 +1,3 @@
-
 .main {
   display: flex;
   flex-direction: column;
@@ -16,6 +15,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .main__video {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 10px 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 .main__carsCard {
@@ -48,10 +48,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4px;
+  padding: 20px 14px;
   width: 22vw;
   min-width: 270px;
   margin: 0px 10px;
+  transition: 0.3s ease;
+  background: var(--white);
+  box-sizing: content-box;
+  border-radius: 22px;
+}
+
+.main__carsCard:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0px 2px 10px #e0e0e0;
 }
 
 .carsCard__img {
@@ -106,6 +115,31 @@
   margin: 0px;
 }
 
+.carsCard__info.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.carsCard__info.tooltip::after {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.carsCard__info.tooltip:hover::after {
+  visibility: visible;
+}
+
 .carsCard__info img {
   width: 100%;
   height: 100%;
@@ -122,6 +156,9 @@
 }
 
 .main__button.button--compare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -134,6 +171,7 @@
   outline-width: 0px;
   margin: 20px 0px;
   transition: 0.3s ease;
+  overflow: hidden;
 }
 
 .main__button.button--compare:hover {
@@ -141,6 +179,28 @@
   border: solid 3px var(--blue-2);
   color: var(--blue-2);
   transform: scale(1.02);
+}
+
+.main__button.button--compare ion-icon {
+  visibility: hidden;
+  width: 0px;
+  margin-right: 0px;
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.main__button.button--compare:hover ion-icon {
+  transform: translateX(0px);
+  visibility: visible;
+  opacity: 1;
+  width: 20px;
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 720px) {
