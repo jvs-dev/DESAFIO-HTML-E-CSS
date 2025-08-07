@@ -110,7 +110,7 @@
 
 @media screen and (max-width: 720px) {
   .main__carsCardTable {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .main__carsCardTable tr {
     flex-direction: column;

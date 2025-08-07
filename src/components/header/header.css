@@ -77,12 +77,12 @@
   }
 
   .header__logo img {
-    width: 90px;
+    width: 70px;
   }
 
   .header__ul {
     gap: 14px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 

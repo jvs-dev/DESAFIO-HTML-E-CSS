@@ -70,7 +70,7 @@
 @media screen and (width <= 612px) {
   .footer {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 14px;
     padding: 16px 20px;
   }
