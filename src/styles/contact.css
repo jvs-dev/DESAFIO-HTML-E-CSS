@@ -1,90 +1,144 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
 
 .main__form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-    width: calc(50vw - 80px);
-    max-width: 520px;
-    min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  width: calc(50vw - 80px);
+  max-width: 520px;
+  min-width: 360px;
 }
 
 .main__form__label {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .main__form__input,
 .main__form__select,
 .main__form__textarea {
-    width: 100%;
-    padding: 12px 9px;
-    border-radius: 12px;
-    border: solid 2px var(--gray);
-    font-size: 16px;
-    font-weight: 600;
+  width: 100%;
+  padding: 8px 9px;
+  border-radius: 10px;
+  border: solid 2px var(--gray);
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s ease;
 }
 
-.main__form__select {
-    color: var(--gray);
+.main__form__input:focus,
+.main__form__select:focus,
+.main__form__textarea:focus {
+  border-color: var(--blue-2);
+  color: var(--blue-2);
+  outline: none;
+  background: #fff;
 }
 
-.main__form__title {
-    font-family: sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    text-align: left;
-}
-
-.main__form__button {
-    background: var(--blue-2);
-    color: #fff;
-    padding: 14px 86px;
-    font-size: 16px;
-    font-weight: 600;
-    border: 0px;
-    outline-width: 0px;
-    border-radius: 12px;
-    width: min-content;
-}
-
-.main__div--1 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-}
-
-.main__carImage {
-    margin: 20px 0px 0px 0px;
+.main__form__input:focus::placeholder,
+.main__form__select:focus::placeholder,
+.main__form__textarea:focus::placeholder {
+  color: var(--blue-2);
+  opacity: 0.6;
 }
 
 .main__form__textarea {
-    padding: 6px 9px;
+  resize: vertical;
+}
+
+.main__form__select {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #555;
+}
+
+.main__form__title {
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  text-align: left;
+}
+
+.main__form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--blue-2);
+  color: #fff;
+  padding: 10px 86px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0px;
+  outline-width: 0px;
+  border-radius: 12px;
+  width: min-content;
+  border: solid 3px transparent;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.main__form__button i {
+  transform: rotate(0deg);
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  font-size: 20px;
+}
+
+.main__form__button:hover {
+  color: var(--blue-2);
+  background: var(--white);
+  border: solid 3px var(--blue-2);
+}
+
+.main__form__button:hover i {
+  transform: rotate(45deg);
+  opacity: 1;
+  visibility: visible;
+  width: 18px;
+}
+
+.main__div--1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin: 40px 0px 60px 0px;
+}
+
+.main__carImage {
+  margin: 20px 0px 0px 0px;
+}
+
+.main__form__textarea {
+  padding: 6px 9px;
 }
 
 @media screen and (max-width: 768px) {
-    .main__div--1 {
-        flex-direction: column;
-        padding-bottom: 40px;
-        align-items: center;
-    }
+  .main__div--1 {
+    flex-direction: column;
+    padding-bottom: 40px;
+    align-items: center;
+  }
 
-    .main__form {
-        width: 100%;
-    }
+  .main__form {
+    width: 100%;
+  }
 }

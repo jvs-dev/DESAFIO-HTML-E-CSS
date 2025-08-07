@@ -9,7 +9,7 @@
 }
 
 .main__img {
-  max-height: calc(100vh - 260px);
+  max-height: calc(100vh - 230px);
   width: auto;
   max-width: 100%;
   height: auto;
@@ -19,8 +19,22 @@
 .main__p {
   width: 100%;
   text-align: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
   font-family: sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+.main__linkImage {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (width <=700px) {
+  .main {
+    padding: 0px;
+  }
 }

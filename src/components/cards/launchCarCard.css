@@ -1,0 +1,111 @@
+.main__carsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 14px;
+  width: 22vw;
+  min-width: 270px;
+  margin: 0px 10px;
+  transition: 0.3s ease;
+  background: var(--white);
+  box-sizing: content-box;
+  border-radius: 22px;
+}
+
+.main__carsCard:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0px 2px 10px #e0e0e0;
+}
+
+.carsCard__img {
+  width: 100%;
+  height: auto;
+}
+
+.carsCard__div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.carsCard__div--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.carsCard__link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.carsCard__link:hover {
+  text-decoration: underline;
+}
+
+.carsCard__text {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.carsCard__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  background: transparent;
+  border: 0px;
+  outline-width: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.carsCard__info.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.carsCard__info.tooltip::after {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.carsCard__info.tooltip:hover::after {
+  visibility: visible;
+}
+
+.carsCard__info img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carsCard__checkBox {
+  height: 30px;
+  width: 30px;
+  padding: 0px;
+  margin: 0px;
+  min-height: 30px;
+  min-width: 30px;
+}
