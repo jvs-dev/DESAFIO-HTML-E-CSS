@@ -2,12 +2,13 @@
   --white: #fff;
   --black: #000;
   --blue: #1a347d;
-  --blue-2: #1351DA;
+  --blue-2: #1351da;
   --gray: #b1b1b1;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -27,4 +28,8 @@ body {
 button,
 input[type="checkbox"] {
   cursor: pointer;
+}
+
+p, a, span {
+  font-family: "Poppins", sans-serif;
 }
