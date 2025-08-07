@@ -1,194 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ford &lt;Enter&gt;</title>
-    <link
-      rel="shortcut icon"
-      href="assets/img/ford-96.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bruno+Ace&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/commons.css" />
-    <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/components/header/header.css" />
-    <link rel="stylesheet" href="src/components/footer/footer.css" />
-    <link rel="stylesheet" href="src/components/cards/launchCarCard.css" />
-    <link rel="stylesheet" href="src/styles/launch.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <a href="https://www.ford.com.br" target="_blank" class="header__logo"
-        ><img src="assets/img/ford-96.png" alt="Ford Logo"
-      /></a>
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li class="header__ul__li"><a href="index.html">Home</a></li>
-          <li class="header__ul__li"><a href="launch.html">Lançamento</a></li>
-          <li class="header__ul__li"><a href="contact.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="main__videoWrapper">
-        <iframe
-          class="main__video"
-          src="https://www.youtube.com/embed/vQsryuNmsL0?si=b2FEqNFo7453J9rK"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ford &lt;Enter&gt;</title>
+  <link rel="shortcut icon" href="assets/img/ford-96.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bruno+Ace&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/commons.css" />
+  <link rel="stylesheet" href="src/css/animations.css">
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/components/header/header.css" />
+  <link rel="stylesheet" href="src/components/footer/footer.css" />
+  <link rel="stylesheet" href="src/components/cards/launchCarCard.css" />
+  <link rel="stylesheet" href="src/styles/launch.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="https://www.ford.com.br" target="_blank" class="header__logo"><img src="assets/img/ford-96.png"
+        alt="Ford Logo" /></a>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__ul__li"><a href="index.html">Home</a></li>
+        <li class="header__ul__li"><a href="launch.html">Lançamento</a></li>
+        <li class="header__ul__li"><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__videoWrapper">
+      <iframe class="main__video animateLoadContainer" src="https://www.youtube.com/embed/vQsryuNmsL0?si=b2FEqNFo7453J9rK"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="main__text--1">
+      Eleve sua experiência de dirigir a um novo patamar com esta Ford Ranger
+      2022. Robusta, potente e com tecnologia de ponta, esta picape é a
+      companheira ideal para o trabalho e para o lazer. A picape Raça Forte do
+      Brasil. A gente sempre esteve nessa terra e vai continuar nela.
+    </p>
+    <table class="main__carsCardTable">
+      <tbody>
+        <tr>
+          <td class="main__carsCard">
+            <img class="carsCard__img animateLoadContainer" src="assets/img/XL Cabine.jpg" alt="" />
+            <div class="carsCard__div">
+              <input class="carsCard__checkBox" type="checkbox" name="checkCar" id="checkCarXLCabine" />
+              <div class="carsCard__div--2">
+                <a href="#" class="carsCard__link">
+                  XL Cabine Simples 2.2 Diesel 4X4 MT 2022
+                </a>
+                <p class="carsCard__text">R$ 183.850</p>
+              </div>
+              <button class="carsCard__info tooltip" type="button" data-tooltip="XL Cabine Simples 2.2 Diesel">
+                <img src="assets/img/info.png" alt="info" />
+              </button>
+            </div>
+          </td>
+
+          <td class="main__carsCard">
+            <img class="carsCard__img animateLoadContainer" src="assets/img/xls 2.2 diesel.jpg" alt="" />
+            <div class="carsCard__div">
+              <input class="carsCard__checkBox" type="checkbox" name="checkCar" id="checkCarXLSDiesel" />
+              <div class="carsCard__div--2">
+                <a href="#" class="carsCard__link">
+                  XLS 2.2 Diesel 4X4 AT 2022
+                </a>
+                <p class="carsCard__text">R$ 220.690</p>
+              </div>
+              <button class="carsCard__info tooltip" type="button" data-tooltip="XLS 2.2 Diesel 4X4 AT 2022">
+                <img src="assets/img/info.png" alt="info" />
+              </button>
+            </div>
+          </td>
+          <td class="main__carsCard">
+            <img class="carsCard__img animateLoadContainer" src="assets/img/storm.jpg" alt="" />
+            <div class="carsCard__div">
+              <input class="carsCard__checkBox" type="checkbox" name="checkCar" id="checkCarStorm" />
+              <div class="carsCard__div--2">
+                <a href="#" class="carsCard__link">
+                  Storm 3.2 Diesel 4X4 AT 2022
+                </a>
+                <p class="carsCard__text">R$ 183.850</p>
+              </div>
+              <button class="carsCard__info tooltip" type="button" data-tooltip="Storm 3.2 Diesel 4X4 AT 2022">
+                <img src="assets/img/info.png" alt="info" />
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="main__button button--compare">
+      <ion-icon name="car-sport-outline"></ion-icon>Compare Carros
+    </button>
+  </main>
+  <footer class="footer">
+    <div class="footer__socialsDiv">
+      <p class="footer__socialsText">Redes Sociais:</p>
+      <div class="footer__div">
+        <a href="https://facebook.com/fordbrasil" target="_blank" class="footer__socials"><img
+            src="assets/img/facebook-50.png" alt="Facebook" /></a>
+        <a href="https://instagram.com/fordbrasil" target="_blank" class="footer__socials"><img
+            src="assets/img/instagram-logo-50.png" alt="Instagram" /></a>
+        <a href="https://youtube.com/fordbrasil" target="_blank" class="footer__socials"><img
+            src="assets/img/youtube-squared-50.png" alt="Youtube" /></a>
       </div>
-      <p class="main__text--1">
-        Eleve sua experiência de dirigir a um novo patamar com esta Ford Ranger
-        2022. Robusta, potente e com tecnologia de ponta, esta picape é a
-        companheira ideal para o trabalho e para o lazer. A picape Raça Forte do
-        Brasil. A gente sempre esteve nessa terra e vai continuar nela.
-      </p>
-      <table class="main__carsCardTable">
-        <tbody>
-          <tr>
-            <td class="main__carsCard">
-              <img
-                class="carsCard__img"
-                src="assets/img/XL Cabine.jpg"
-                alt=""
-              />
-              <div class="carsCard__div">
-                <input
-                  class="carsCard__checkBox"
-                  type="checkbox"
-                  name="checkCar"
-                  id="checkCarXLCabine"
-                />
-                <div class="carsCard__div--2">
-                  <a href="#" class="carsCard__link">
-                    XL Cabine Simples 2.2 Diesel 4X4 MT 2022
-                  </a>
-                  <p class="carsCard__text">R$ 183.850</p>
-                </div>
-                <button
-                  class="carsCard__info tooltip"
-                  type="button"
-                  data-tooltip="XL Cabine Simples 2.2 Diesel"
-                >
-                  <img src="assets/img/info.png" alt="info" />
-                </button>
-              </div>
-            </td>
+    </div>
 
-            <td class="main__carsCard">
-              <img
-                class="carsCard__img"
-                src="assets/img/xls 2.2 diesel.jpg"
-                alt=""
-              />
-              <div class="carsCard__div">
-                <input
-                  class="carsCard__checkBox"
-                  type="checkbox"
-                  name="checkCar"
-                  id="checkCarXLSDiesel"
-                />
-                <div class="carsCard__div--2">
-                  <a href="#" class="carsCard__link">
-                    XLS 2.2 Diesel 4X4 AT 2022
-                  </a>
-                  <p class="carsCard__text">R$ 220.690</p>
-                </div>
-                <button
-                  class="carsCard__info tooltip"
-                  type="button"
-                  data-tooltip="XLS 2.2 Diesel 4X4 AT 2022"
-                >
-                  <img src="assets/img/info.png" alt="info" />
-                </button>
-              </div>
-            </td>
-            <td class="main__carsCard">
-              <img class="carsCard__img" src="assets/img/storm.jpg" alt="" />
-              <div class="carsCard__div">
-                <input
-                  class="carsCard__checkBox"
-                  type="checkbox"
-                  name="checkCar"
-                  id="checkCarStorm"
-                />
-                <div class="carsCard__div--2">
-                  <a href="#" class="carsCard__link">
-                    Storm 3.2 Diesel 4X4 AT 2022
-                  </a>
-                  <p class="carsCard__text">R$ 183.850</p>
-                </div>
-                <button
-                  class="carsCard__info tooltip"
-                  type="button"
-                  data-tooltip="Storm 3.2 Diesel 4X4 AT 2022"
-                >
-                  <img src="assets/img/info.png" alt="info" />
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <button type="button" class="main__button button--compare">
-        <ion-icon name="car-sport-outline"></ion-icon>Compare Carros
-      </button>
-    </main>
-    <footer class="footer">
-      <div class="footer__socialsDiv">
-        <p class="footer__socialsText">Redes Sociais:</p>
-        <div class="footer__div">
-          <a
-            href="https://facebook.com/fordbrasil"
-            target="_blank"
-            class="footer__socials"
-            ><img src="assets/img/facebook-50.png" alt="Facebook"
-          /></a>
-          <a
-            href="https://instagram.com/fordbrasil"
-            target="_blank"
-            class="footer__socials"
-            ><img src="assets/img/instagram-logo-50.png" alt="Instagram"
-          /></a>
-          <a
-            href="https://youtube.com/fordbrasil"
-            target="_blank"
-            class="footer__socials"
-            ><img src="assets/img/youtube-squared-50.png" alt="Youtube"
-          /></a>
-        </div>
-      </div>
+    <p class="footer__copy">
+      &copy; 2025<span> Ford Motor Company todos os direitos reservados</span>
+    </p>
 
-      <p class="footer__copy">
-        &copy; 2025 Ford Motor Company todos os direitos reservados
-      </p>
+    <img src="assets/img/ford-96.png" alt="Logo Footer" class="footer__logo" />
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="src/scripts/launch.js"></script>
+</body>
 
-      <img
-        src="assets/img/ford-96.png"
-        alt="Logo Footer"
-        class="footer__logo"
-      />
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="src/scripts/launch.js"></script>
-  </body>
 </html>

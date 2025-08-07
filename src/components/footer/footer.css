@@ -70,9 +70,19 @@
 @media screen and (width <= 612px) {
   .footer {
     display: flex;
+    flex-direction: column-reverse;
+    gap: 14px;
+    padding: 16px 20px;
   }
-  .footer__socialsDiv {
+  .footer__socialsText {
     display: none;
+  }
+  .footer__socials img {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__div {
+    width: max-content;
   }
   .footer__logo {
     display: none;
@@ -80,5 +90,8 @@
   .footer__copy {
     text-align: center;
     width: 100%;
+  }
+  .footer__copy span {
+    display: none;
   }
 }

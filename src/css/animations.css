@@ -1,0 +1,22 @@
+.animateLoadContainer {
+    background: linear-gradient(90deg, #fff, rgb(182, 182, 182), #fff);
+    background-size: 600% 100%;
+    overflow: hidden;
+    animation: backgroundLoadingImage 2s ease infinite;
+  }
+  
+  @keyframes backgroundLoadingImage {
+    0% {
+      background-position: 0% 0%;
+    }
+  
+    50% {
+      background-position: 100% 100%;
+    }
+  
+    100% {
+      background-position: 0% 0%;
+    }
+  
+  }
+  
