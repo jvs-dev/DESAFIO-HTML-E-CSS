@@ -33,13 +33,31 @@
   font-weight: 600;
 }
 
-.main__carsCardDiv {
+.main__carsCardTable {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px 0px 20px;
+  overflow: hidden;
+}
+
+.main__carsCardTable tbody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main__carsCardTable tr {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 30px 20px 0px 20px;
+  width: 100%;
+  gap: 20px;
 }
 
 .main__button.button--compare {
@@ -91,9 +109,11 @@
 }
 
 @media screen and (max-width: 720px) {
-  .main__carsCardDiv {
+  .main__carsCardTable {
+    margin-bottom: 20px;
+  }
+  .main__carsCardTable tr {
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 20px;
   }
 }
